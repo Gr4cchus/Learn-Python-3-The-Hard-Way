@@ -1,0 +1,3 @@
+function names like abc_def()
+var names like varName
+- not sure what it means to capitalize var name like VarName
