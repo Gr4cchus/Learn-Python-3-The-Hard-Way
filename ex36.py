@@ -105,9 +105,4 @@ def right_endless_road():
             continue
 
 
-
-
-
-
-
 start()
