@@ -94,16 +94,12 @@ class Map(object):
         'kitchen': Kitchen(),
         'Finished': Finished(),
     }
-    
-    def list_options(self):
-        for items in self.locations:
-            print(items)
 
-    # def __init__(self, start_scene):
-    #     pass
+    def __init__(self, start_scene):
+        pass
 
-    # def next_scene(self, scene_name):
-    #     pass
+    def next_scene(self, scene_name):
+        pass
 
     def opening_scene(self):
         pass

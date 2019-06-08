@@ -18,14 +18,12 @@ class Entrance(object):
 
     def enter(self):
         print("You have reached the house and walk through the door. Where do you want to go?")
-        Map().list_options()
-        action = input('>  ')
+        # print(Map.locations)
 
-        if action in Map().locations:
-            print("success")
-        else:
-            print("Fail")
-            print(Map.locations)
+        # action = input('>  ')
+
+        # for items in Map.locations:
+        #     print(items)
 
 
 class LivingRoom(object):
@@ -94,20 +92,20 @@ class Map(object):
         'kitchen': Kitchen(),
         'Finished': Finished(),
     }
-    
-    def list_options(self):
-        for items in self.locations:
-            print(items)
 
-    # def __init__(self, start_scene):
-    #     pass
+    def __init__(self, start_scene):
+        pass
 
-    # def next_scene(self, scene_name):
-    #     pass
+    def next_scene(self, scene_name):
+        pass
 
     def opening_scene(self):
         pass
 
 
-start = Entrance()
-start.enter()
+# start = Entrance()
+# start.enter()
+(Map.locations.get('entrance'))
+
+for items in Map.locations:
+    print(items)

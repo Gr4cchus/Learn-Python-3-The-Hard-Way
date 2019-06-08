@@ -94,10 +94,6 @@ class Map(object):
         'kitchen': Kitchen(),
         'Finished': Finished(),
     }
-    
-    def list_options(self):
-        for items in self.locations:
-            print(items)
 
     # def __init__(self, start_scene):
     #     pass

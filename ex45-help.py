@@ -2,14 +2,16 @@ from sys import exit
 from random import randint
 from textwrap import dedent
 
+
 class Scene(object):
-    
+
     def enter(self):
         print("This scene is not yet configured")
         print("subclass it and implement enter().")
         exit(1)
 
 # engine was here
+
 
 class Death(Scene):
 
@@ -58,7 +60,7 @@ class LaserWeaponArmor(Scene):
 
     def enter(self):
         print(dedent("Your at the armory, 'g'rab the bomb."))
-        
+
         action = input("> ")
 
         if action == 'g':
@@ -67,7 +69,7 @@ class LaserWeaponArmor(Scene):
         else:
             print("You die.")
             return 'death'
-        
+
 
 class TheBridge(Scene):
 
@@ -78,7 +80,7 @@ class TheBridge(Scene):
         if action == "t":
             print("You get shot and die as you watch the Gothon trying to disarm the bomb")
             return 'death'
-        
+
         elif action == 'p':
             print("You point the blaster at the bomb but slowly place it. You back out through the door to the escape pod")
             return 'escape_pod'
@@ -130,11 +132,11 @@ class Map(object):
         print("MMMMMM scene_name:", scene_name)
         print("MMMMM next_scene val:", val)
         return val
-    
+
     def opening_scene(self):
         print("MMM opening_scene:", self.next_scene(self.start_scene))
         return self.next_scene(self.start_scene)
-        
+
 
 class Engine(object):
 
@@ -145,7 +147,7 @@ class Engine(object):
         print(">>>>> PLAY")
         current_scene = self.scene_map.opening_scene()
         last_scene = self.scene_map.next_scene('finished')
-        
+
 
         print("^^^^^^^^ before while current_scene=", current_scene, "last_scene=", last_scene)
         print(current_scene.enter())
