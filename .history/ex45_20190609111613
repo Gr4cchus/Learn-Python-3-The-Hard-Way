@@ -1,0 +1,39 @@
+You are in a house investigating paranormal activity.
+                       +--------------------+
+                       |                    |
+                       |  Patio             |
+                       |                    |
+                       |                    |
+                       |                    |
++-------------+------------------------+--------------------------+
+|             |        |    |Exit      |    |                     |
+|             |        |    +----------+    |                     |
+|             |Bathroom|                    |                     |
+|Bedroom      |        |    Dinning Area    |   Kitchen           |
+|             |        |                    |                     |
+|             +--------+                    |                     |
+|             |                             |                     |
+|             |                             |                     |
+|             |                             +---------------------+
++-------------+                                                   |
+|                                                                 |
+|                                                                 |
++------------------+                                              |
+|                  |                                              |
+| Master Bedroom   |                           Living Room        |
+|                  |                                              |
+|                  |                                              |
+|          +-------+                                              |
+|          |Master |                                              |
+|          |Bedroom|        +---------+                           |
+|          |Bathroom        |Entrance |                           |
+|          |       |        |         |                           |
++----------+-------+--------+---------+---------------------------+
+
+# class Engine():
+
+#     def __init__(self, map):
+#         self.map = map
+
+#     def play(self):
+#         while True:

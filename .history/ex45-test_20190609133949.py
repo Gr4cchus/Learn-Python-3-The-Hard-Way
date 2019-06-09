@@ -21,10 +21,10 @@ class Map():
     #         'room2': room2()
     #     }
     #     return dict_locations
-    dict_locations = {
-            'room1': room1(),
-            'room2': room2()
-    }
+    # dict_locations = {
+    #         'room1': room1(),
+    #         'room2': room2()
+    # }
 
 
 class Engine():
@@ -34,8 +34,7 @@ class Engine():
 
     def play(self):
         while True:
-            # a = self.map.dict_locations
-            print('yes')
+            a = self.map.dict_locations()
 
 
 themap = Map('room1')

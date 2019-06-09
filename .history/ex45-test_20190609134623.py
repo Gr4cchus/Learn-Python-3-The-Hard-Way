@@ -8,10 +8,10 @@ class Map():
         #     'room2': Room2()
         # }
 
-    def room1(self):
+    def room1():
         print("You enter room 1")
 
-    def room2(self):
+    def room2():
         print("You enter room 2")
 
     # def locations(self):
@@ -35,7 +35,7 @@ class Engine():
     def play(self):
         while True:
             # a = self.map.dict_locations
-            print('yes')
+            print
 
 
 themap = Map('room1')

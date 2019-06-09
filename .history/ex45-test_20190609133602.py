@@ -9,10 +9,14 @@ class Map():
         # }
 
     def room1(self):
-        print("You enter room 1")
+
+        def enter():
+            print("You enter room 1")
 
     def room2(self):
-        print("You enter room 2")
+
+        def enter():
+            print("You enter room 2")
 
     # def locations(self):
 
@@ -21,10 +25,6 @@ class Map():
     #         'room2': room2()
     #     }
     #     return dict_locations
-    dict_locations = {
-            'room1': room1(),
-            'room2': room2()
-    }
 
 
 class Engine():
@@ -34,9 +34,9 @@ class Engine():
 
     def play(self):
         while True:
-            # a = self.map.dict_locations
-            print('yes')
-
+            print(self.map.locations)
+            test = self.map.locations
+            test.get(starting_room)
 
 themap = Map('room1')
 theengine = Engine(themap)

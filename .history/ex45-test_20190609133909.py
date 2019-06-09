@@ -12,7 +12,9 @@ class Map():
         print("You enter room 1")
 
     def room2(self):
-        print("You enter room 2")
+
+        def enter():
+            print("You enter room 2")
 
     # def locations(self):
 
@@ -34,8 +36,7 @@ class Engine():
 
     def play(self):
         while True:
-            # a = self.map.dict_locations
-            print('yes')
+            a = self.map.dict_locations()
 
 
 themap = Map('room1')
