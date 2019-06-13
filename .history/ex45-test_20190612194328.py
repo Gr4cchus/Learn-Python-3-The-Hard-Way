@@ -37,11 +37,6 @@ class Scenes(object):
         for i in self.map_list:
             print(i)
 
-    cmd = {
-        'room1': room1,
-        'room2': room2,
-    }
-
 # class Map(Scenes):
 
 #     a = Scenes()
@@ -50,6 +45,7 @@ class Scenes(object):
 #         'room1': a.room1(),
 #         'room2': a.room2(),
 #     }
+
 
 # class Engine():
 
@@ -75,6 +71,5 @@ while True:
     action = input("> ")
     if action in thescenes.map_list:
         print("success")
-        # trying to test user input on calling a function from a list or dict.
-        # thescenes.map_list[action]()
-        thescenes.cmd[action]()
+        thescenes.room1()
+

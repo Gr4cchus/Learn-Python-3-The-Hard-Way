@@ -21,12 +21,10 @@ class Scenes(object):
     def room1(self):
         print("You enter room 1")
         print("Where would you like to go")
-        self.locations()
 
     def room2(self):
         print("You enter room 2")
         print("Where would you like to go")
-        self.locations()
     
     def finish(self):
         print("You have finished")
@@ -37,19 +35,28 @@ class Scenes(object):
         for i in self.map_list:
             print(i)
 
-    cmd = {
-        'room1': room1,
-        'room2': room2,
-    }
+    # def locations(self):
+    #     dict_locations = {
+    #         'room1': room1(),
+    #         'room2': room2()
+    #     }
+    #     return dict_locations
+    # dict_locations = {
+    #         'room1': room1(),
+    #         'room2': room2()
+    # }
 
-# class Map(Scenes):
 
-#     a = Scenes()
+# class Locations(Scenes):
 
-#     map_dict = {
-#         'room1': a.room1(),
-#         'room2': a.room2(),
-#     }
+#     pass
+
+#     def map(self):
+#         dict_locations = {
+#             'room1': room1(),
+#             'room2': room2()
+#         }
+#         return dict_locations
 
 # class Engine():
 
@@ -71,10 +78,6 @@ thescenes = Scenes()
 #     thelocations.map.dict_locations.get('room1')
 
 thescenes.start()
-while True:
-    action = input("> ")
-    if action in thescenes.map_list:
-        print("success")
-        # trying to test user input on calling a function from a list or dict.
-        # thescenes.map_list[action]()
-        thescenes.cmd[action]()
+action = input("> ")
+if action in thescenes.map_list:
+    print("success")

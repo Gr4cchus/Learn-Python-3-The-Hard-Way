@@ -18,12 +18,12 @@ class Scenes(object):
         print("Where would you like to go")
         self.locations()
 
-    def room1(self):
+    def room1():
         print("You enter room 1")
         print("Where would you like to go")
         self.locations()
 
-    def room2(self):
+    def room2():
         print("You enter room 2")
         print("Where would you like to go")
         self.locations()
@@ -38,8 +38,8 @@ class Scenes(object):
             print(i)
 
     cmd = {
-        'room1': room1,
-        'room2': room2,
+        'room1': room1(),
+        'room2': room2(),
     }
 
 # class Map(Scenes):
@@ -75,6 +75,4 @@ while True:
     action = input("> ")
     if action in thescenes.map_list:
         print("success")
-        # trying to test user input on calling a function from a list or dict.
-        # thescenes.map_list[action]()
-        thescenes.cmd[action]()
+        thescenes.room1()

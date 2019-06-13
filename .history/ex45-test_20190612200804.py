@@ -76,5 +76,4 @@ while True:
     if action in thescenes.map_list:
         print("success")
         # trying to test user input on calling a function from a list or dict.
-        # thescenes.map_list[action]()
         thescenes.cmd[action]()

@@ -1,0 +1,15 @@
+class Foo:
+    answer = 42
+
+f1 = Foo()
+f2 = Foo()
+
+print(f1.answer)
+print(f2.answer)
+# both will print 42
+
+f1.answer = 84
+Foo.answer = 21
+
+print(f1.answer)  # 84
+print(f2.answer) # 21
