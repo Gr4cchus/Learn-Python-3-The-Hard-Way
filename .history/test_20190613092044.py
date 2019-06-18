@@ -107,4 +107,4 @@ while True:
     action = input("> ")
     if action in thescenes.map_list:
         print("success")
-        thescenes.map_list[action](thescenes)
+        thescenes.map_list[action]()
