@@ -53,7 +53,6 @@ class Scenes(object):
     def room1(self):
         print("You enter room 1")
         print("Where would you like to go")
-        # self.guessing_game
         self.locations()
 
     def room2(self):
@@ -74,7 +73,7 @@ class Scenes(object):
         'room1': room1,
         'room2': room2,
     }
-            
+    
 
 # class Map(Scenes):
 

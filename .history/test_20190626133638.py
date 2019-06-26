@@ -1,3 +1,4 @@
+import random
 # # class Foo:
 # #     answer = 42
 
@@ -74,6 +75,17 @@ class Scenes(object):
         'room1': room1,
         'room2': room2,
     }
+
+    # def guessing_game(self):
+    #     n = random.randint(1,4)
+    #     print("Oh no a mini-game.")
+    #     print("Guess the number between 1-4. To pass")
+    #     answer = 0
+    #     while answer != n:
+    #         answer = input("> ")
+    #         print("wrong guess again!")
+    #     if answer == n:
+    #         print("Success")
             
 
 # class Map(Scenes):

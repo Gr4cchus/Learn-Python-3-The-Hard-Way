@@ -1,3 +1,4 @@
+import random
 # # class Foo:
 # #     answer = 42
 
